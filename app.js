@@ -5,13 +5,16 @@ const City = require("./models/City");
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const MONGO_URL =
+  process.env.MONGO_URL ||
+  "mongodb://admin:password123@localhost:27017/myapp?authSource=admin";
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
 mongoose
-  .connect("mongodb://admin:password123@localhost:27017/myapp?authSource=admin")
+  .connect(MONGO_URL)
   .then(() => {
     console.log("MongoDBに接続しました");
   })
