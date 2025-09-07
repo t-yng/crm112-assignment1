@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(/Users/t-yng/Documents/カナダ留学/CCTB/Fall_Semester/Cyber Incidents, events and logging /assignment1/quick-start/**)",
+      "Read(/Users/t-yng/Documents/カナダ留学/CCTB/Fall_Semester/Cyber Incidents, events and logging /assignment1/quick-start/**)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

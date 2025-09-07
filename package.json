@@ -1,0 +1,23 @@
+{
+  "name": "quick-start",
+  "version": "1.0.0",
+  "description": "このプロジェクトでは、Docker Composeを使ってMongoDBコンテナを簡単に起動できます。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "node app.js",
+    "mongo:up": "docker-compose up -d mongodb",
+    "mongo:down": "docker-compose down",
+    "mongo:logs": "docker-compose logs -f mongodb",
+    "mongo:shell": "docker exec -it mongodb-container mongosh -u admin -p password123"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.15.0",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.18.0"
+  }
+}
